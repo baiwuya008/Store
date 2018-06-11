@@ -1,0 +1,1 @@
+find . -name '*.xml'|awk -F ".xml" '{print $1}'|xargs -I {} mv ./{}.xml ./{}
